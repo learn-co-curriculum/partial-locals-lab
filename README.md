@@ -25,7 +25,7 @@ Second, he also wants to add some search functionality so that a user can search
 
 3. On the classroom show page, iterate through each classroom's students and display each of them using our `_student.html.erb` partial with locals.
 
-3. Add in a search functionality such that users can search for a course by subject and see all matching results.
-The results should be displayed by rendering a `classrooms/_classroom.html.erb` partial.
+4. Add in a search functionality such that users can search for a student by name and see all matching results.
+The results should be displayed by rendering a `students/_student.html.erb` partial.
 
 <a href='https://learn.co/lessons/partial-locals-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
