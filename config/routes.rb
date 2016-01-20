@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :classrooms
   resources :students
+  get 'students/search' => 'students#search'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
