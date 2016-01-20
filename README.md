@@ -19,13 +19,13 @@ Second, he also wants to add some search functionality so that a user can search
 
 ## Instructions
 
-1. Refactor the `_form.html.erb` partial to pass through the form object as a local.  
+1. Refactor the `_form.html.erb` partial to pass through the form object as a local.  Because the form block will start on both the students/new and students/edit pages, let's rename our partial from `_form.html.erb` to `_fields.html.erb` as now it will contain all of the fields (and the submit button).
 
 2. Refactor the `_student.html.erb` partial to pass through each rendered student as a local.
 
 3. On the classroom show page, iterate through each classroom's students and display each of them using our `_student.html.erb` partial with locals.
 
-3. Add in a search functionality such that students search for a course by subject and see all matching results.
+3. Add in a search functionality such that users can search for a course by subject and see all matching results.
 The results should be displayed by rendering a `classrooms/_classroom.html.erb` partial.
 
 <a href='https://learn.co/lessons/partial-locals-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
