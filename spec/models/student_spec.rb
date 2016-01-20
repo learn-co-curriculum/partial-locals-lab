@@ -1,8 +1,8 @@
-require "rails_helper"
+require 'rails_helper'
 
-RSpec.describe "Student" do
+RSpec.describe 'Student' do
   describe 'search' do
-    let(:student_names) { ['Bob', 'Robert', 'Roberta', 'Shirley', 'Shelby'] }
+    let(:student_names) { %w[Bob Robert Roberta Shirley Shelby] }
 
     before do
       student_names.each do |name|
@@ -18,7 +18,7 @@ RSpec.describe "Student" do
 
     context 'when it receives a search query' do
       it 'returns all students whose names contain the given string' do
-        expect(Student.search('rob').map {|s| s.name}).to match_array(['Robert', 'Roberta'])
+        expect(Student.search('rob').map(&:name)).to match_array(%w[Robert Roberta])
       end
     end
   end
