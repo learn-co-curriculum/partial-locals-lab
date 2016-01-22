@@ -20,7 +20,7 @@ Your team lead also asked for a couple new features.
 
 1. Refactor the `_form.html.erb` partial to pass through the form object as a local.  Because the form block will start on both the students/new and students/edit pages, let's rename our partial from `_form.html.erb` to `_fields.html.erb` as now it will contain all of the fields (and the submit button).
 
-2. Refactor the `_student.html.erb` partial to pass through each rendered student as a local.
+2. Refactor the `_student.html.erb` partial to pass through each student as a local.
 
 3. On the classroom show page, iterate through each classroom's students and display each of them using our `_student.html.erb` partial with locals.
 
