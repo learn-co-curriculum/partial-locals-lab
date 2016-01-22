@@ -1,4 +1,4 @@
-# Partials with locals
+# Partials with Locals Lab 
 
 ## Objectives
 
