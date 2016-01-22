@@ -15,7 +15,7 @@ RSpec.describe "create and edit form" do
       student = Student.new
       assign(:student, student)
       render :template => "students/new.html.erb"
-      expect(rendered).to render_template(:partial => "students/_fields")
+      expect(rendered).to render_template(:partial => "_fields")
     end
 
 
@@ -31,7 +31,7 @@ RSpec.describe "create and edit form" do
       expect(f).to receive(:submit)
 
       render :template => "students/new.html.erb"
-      expect(rendered).to render_template(:partial => "students/_fields", locals: {f: f})
+      expect(rendered).to render_template(:partial => "_fields", locals: {f: f})
     end
   end
 
@@ -49,7 +49,7 @@ RSpec.describe "create and edit form" do
       student = Student.create(name: 'Bobby', hometown: Faker::Address.city, birthday: Faker::Date.between(25.years.ago, 18.years.ago))
       assign(:student, student)
       render :template => "students/new.html.erb"
-      expect(rendered).to render_template(:partial => "students/_fields")
+      expect(rendered).to render_template(:partial => "_fields")
     end
 
 
@@ -65,7 +65,7 @@ RSpec.describe "create and edit form" do
       expect(f).to receive(:submit)
 
       render :template => "students/edit.html.erb"
-      expect(rendered).to render_template(:partial => "students/_fields", locals: {f: f})
+      expect(rendered).to render_template(:partial => "_fields", locals: {f: f})
     end
   end
 end
