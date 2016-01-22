@@ -41,12 +41,7 @@ RSpec.describe 'classroom_show_view' do
     render template: 'classrooms/show.html.erb'
     expect(classroom.students.count).to eq 5
     classroom.students.each do |student|
-      if student.name.include? "'"
-        s = student.name.gsub(/'/, '&#39;')
-        expect(rendered).to include(s)
-      else
-        expect(rendered).to include(student.name)
-    end
+      expect(rendered).to include(student.name)
     end
   end
 end
