@@ -18,7 +18,7 @@ Your team lead also asked for a couple new features.
 
 ## Instructions
 
-1. Refactor the `_form.html.erb` partial to pass through the form object as a local.  Because the form block will start on both the students/new and students/edit pages, let's rename our partial from `_form.html.erb` to `_fields.html.erb` as now it will contain all of the fields (and the submit button).
+1. Refactor the `_form.html.erb` partial to accept the argument to the form_for helper as a local.  You'll also need to change the `new.html.erb` and `edit.html.erb` views as well.
 
 2. Refactor the `_student.html.erb` partial to pass through each student as a local.
 
