@@ -5,10 +5,10 @@ couple new features using this new tool.
 
 ## Objectives
 
-1. Use the `locals` keyword
-2. Understand why using instance variables in partials is bad
-3. Use a partial to iterate over a collection, passing in a local
-4. Use a partial from another controller with a local
+1.  Use the `locals` keyword
+2.  Understand why using instance variables in partials is bad
+3.  Use a partial to iterate over a collection, passing in a local
+4.  Use a partial from another controller with a local
 
 # Overview
 
@@ -30,18 +30,18 @@ students with similar names are returned in the search results.
 
 ## Instructions
 
-1. Refactor the `_form.html.erb` partial to accept the argument to the
-   `form_for` helper as a local. You'll also need to change the `new.html.erb` and
-   `edit.html.erb` views as well.
+1.  Refactor the `_form.html.erb` partial to accept the argument to the
+    `form_for` helper as a local. You'll also need to change the `new.html.erb` and
+    `edit.html.erb` views as well.
 
-2. Refactor the `_student.html.erb` partial to pass through each rendered
-   student as a local.
+2.  Refactor the `_student.html.erb` partial to pass through each rendered
+    student as a local.
 
-3. On the classroom show page, iterate through each classroom's students and
-   display each of them using our `_student.html.erb` partial with locals.
+3.  On the classroom show page, iterate through each classroom's students and
+    display each of them using our `_student.html.erb` partial with locals.
 
-4. Create a `_classroom.html.erb` partial to display classroom information on
-   the classroom show page.
+4.  Create a `_classroom.html.erb` partial to display classroom information on
+    the classroom show page.
 
 5. Add in search functionality such that users can type in a student name or
    fragment of a student name and and see all matching results on the students
@@ -53,5 +53,3 @@ students with similar names are returned in the search results.
    LIKE ?", "%M%")`. You should be able to visually test this by visiting
    `http://localhost:3000?q="search_text"`. Doing so will mean that you will
    have a `q` parameter whose data can be fit into a `LIKE` query.
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
