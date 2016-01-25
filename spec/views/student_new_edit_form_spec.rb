@@ -43,7 +43,6 @@ RSpec.describe "create and edit form" do
       student = Student.create(name: 'Bobby', hometown: Faker::Address.city, birthday: Faker::Date.between(25.years.ago, 18.years.ago))
       assign(:student, student)
       render :template => "students/new.html.erb"
-
       expect(rendered).to render_template(:partial => "_form")
     end
 
