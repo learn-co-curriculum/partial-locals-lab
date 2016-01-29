@@ -27,4 +27,4 @@ Your team lead also asked for a couple new features.
 3. Add in search functionality such that users can search for a course by subject and see all matching results.
 The results should be displayed by rendering a `classrooms/_classroom.html.erb` partial.
 
-<a href='https://learn.co/lessons/partial-locals-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab' title='Partials with Locals Lab'>Partials with Locals Lab</a> on Learn.co and start learning to code for free.</p>
