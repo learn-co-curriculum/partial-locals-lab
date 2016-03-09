@@ -1,5 +1,5 @@
 # Partials with locals
-Now that we learned locals, let's refactor our old codebase, and a couple new features using this new tool.  
+Now that we learned locals, let's refactor our old codebase, and a couple new features using this new tool.
 
 ## Objectives
 
@@ -9,13 +9,13 @@ Now that we learned locals, let's refactor our old codebase, and a couple new fe
 4. Use a partial form another controller with a local
 
 # Overview
-So your team's lead engineer looked over the codebase and asked you to not refer to instance variables in your partials, but rather to pass through local variables.  That way your code will be more explicit about its dependencies when you call the partial.  
+So your team's lead engineer looked over the codebase and asked you to not refer to instance variables in your partials, but rather to pass through local variables.  That way your code will be more explicit about its dependencies when you call the partial.
 
 Also the lead engineer asked for a couple new features.
 
 The first is that we display all students on the classroom show page, and stop displaying a special note about the oldest student.  The lead engineer, being old himself, thinks that this isn't polite.
 
-Second, he also wants to add some search functionality so that a user can search for a classroom and see that classroom's show page.  He tells that by using partials we can render out each matching result using a partial that displays information about each classroom.
+Second, he also wants to add some search functionality so that a user can search for a student by name. It's okay if other students whose names are similar come back in the results.
 
 ## Instructions
 
@@ -25,7 +25,7 @@ Second, he also wants to add some search functionality so that a user can search
 
 3. On the classroom show page, iterate through each classroom's students and display each of them using our `_student.html.erb` partial with locals.
 
-4. Add in a search functionality such that users can search for a student by name and see all matching results.
+4. Add in a search functionality such that users can search for a student by name and see all matching results on the students index page.
 The results should be displayed by rendering a `students/_student.html.erb` partial.
 
 <a href='https://learn.co/lessons/partial-locals-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
