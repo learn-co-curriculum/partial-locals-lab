@@ -1,5 +1,5 @@
 # Partials with locals
-Now that we learned locals, let's refactor our old codebase, and a couple new features using this new tool.
+Now that we learned locals, let's refactor our old codebase and a couple new features using this new tool.
 
 ## Objectives
 
@@ -33,3 +33,5 @@ The results should be displayed by rendering a `students/_student.html.erb` part
 <a href='https://learn.co/lessons/partial-locals-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
