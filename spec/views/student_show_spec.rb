@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "show_view" do
-  let(:student){ Student.create(name: 'Bobby', hometown: Faker::Address.city, birthday: Faker::Date.between(25.years.ago, 18.years.ago)) }
+  let(:student){ Student.create(name: 'Bobby', hometown: Faker::Address.city, birthday: Faker::Date.between(from: 25.years.ago, to: 18.years.ago))}
 
   it "renders student information from the classroom show view" do
     view.lookup_context.prefixes = %w[students]
