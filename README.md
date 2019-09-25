@@ -51,7 +51,7 @@ students with similar names are returned in the search results.
    matches.  To help you out, you'll want to write a flexibly matching (or
    "wildcard") query in ActiveRecord that follows the form: `Student.where("name
    LIKE ?", "%M%")`. You should be able to visually test this by visiting
-   `http://localhost:3000?q="search_text"`. Doing so will mean that you will
-   have a `q` parameter whose data can be fit into a `LIKE` query.
+   `http://localhost:3000?query="search_text"`. Doing so will mean that you will
+   have a `query` parameter whose data can be fit into a `LIKE` query.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
