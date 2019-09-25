@@ -24,8 +24,9 @@ of singling out the oldest student with a special note. The engineer thinks
 this isn't very polite.
 
 Second, they also want to add some search functionality so that a user can
-search for a student by name. It's okay if other students with similar names are
-returned in the search results.
+search for a student by name. They'll type the name in in a form field and
+we'll use the power of ActiveRecord to find matching data. It's OK if other
+students with similar names are returned in the search results.
 
 ## Instructions
 
@@ -42,8 +43,15 @@ returned in the search results.
 4. Create a `_classroom.html.erb` partial to display classroom information on
    the classroom show page.
 
-5. Add in search functionality such that users can search for a student by name
-   and see all matching results on the students index page. The results should be
-   displayed by rendering a `students/_student.html.erb` partial.
+5. Add in search functionality such that users can type in a student name or
+   fragment of a student name and and see all matching results on the students
+   index page. The results should be displayed by rendering a
+   `students/_student.html.erb` partial. This will require you to do a "fuzzy"
+   or "wildcard" search in the controller in order to create the set of
+   matches.  To help you out, you'll want to write a flexibly matching (or
+   "wildcard") query in ActiveRecord that follows the form: `Student.where("name
+   LIKE ?", "%M%")`. You should be able to visually test this by visiting
+   `http://localhost:3000?q="search_text"`. Doing so will mean that you will
+   have a `q` parameter whose data can be fit into a `LIKE` query.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
