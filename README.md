@@ -53,5 +53,3 @@ students with similar names are returned in the search results.
    LIKE ?", "%M%")`. You should be able to visually test this by visiting
    `http://localhost:3000?query="search_text"`. Doing so will mean that you will
    have a `query` parameter whose data can be fit into a `LIKE` query.
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-lab'>Partial with Locals Lab</a> on Learn.co and start learning to code for free.</p>
