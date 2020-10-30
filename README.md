@@ -10,7 +10,7 @@ couple new features using this new tool.
 3. Use a partial to iterate over a collection, passing in a local
 4. Use a partial from another controller with a local
 
-# Overview
+## Overview
 
 So your team's lead engineer looked over the codebase and asked you to not refer
 to instance variables in your partials but rather to pass through local
