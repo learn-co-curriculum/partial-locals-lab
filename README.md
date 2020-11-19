@@ -1,4 +1,4 @@
-# Partials with Locals
+# Partials with Locals Lab
 
 Now that we learned about locals, let's refactor our old codebase and add a
 couple new features using this new tool.
