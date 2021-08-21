@@ -46,15 +46,34 @@ students with similar names are returned in the search results.
 5. Add in search functionality such that users can type in a student name or
    fragment of a student name and and see all matching results on the students
    index page. The results should be displayed by rendering a
-   `students/_student.html.erb` partial. This will require you to do a "fuzzy"
-   or "wildcard" search in the controller in order to create the set of matches.
-   To help you out, you'll want to write a flexibly matching (or "wildcard")
-   query in ActiveRecord that follows the form: `Student.where("name LIKE ?",
-   "%query%")`. For example, `Student.where("name LIKE ?", "%M%")` will return
-   all students with an "M" anywhere in their name. Once you have the search
-   functionality coded, you should be able to visually test it by visiting
-   `http://localhost:3000?query="search_text"`.
+   `students/_student.html.erb` partial.
+
+To start on this last deliverable, add a search form using the `form_tag` helper
+to your students index page:
+
+```erb
+<%= form_tag students_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+```
+
+When this form is submitted, it will make a GET request to `/students`. The text
+from the query will be available in the params hash. From here, you'll need to
+use that query to find students using a "fuzzy" or "wildcard" search in the
+controller in order to create the set of matches.
+
+For the next step, you'll need to write a flexibly matching (or "wildcard")
+query in ActiveRecord that follows the form:
+`Student.where("name LIKE ?", "%query%")`. For example,
+`Student.where("name LIKE ?", "%M%")` will return all students with an "M"
+anywhere in their name. Remember, your query will come from the params hash.
+
+Once you have the search functionality coded, you should be able to visually
+test it by visiting `http://localhost:3000/students?query=search_text`.
 
 ## Resources
 
-* [SQL LIKE Operator](https://www.w3schools.com/sql/sql_like.asp)
+- [SQL LIKE Operator](https://www.w3schools.com/sql/sql_like.asp)
