@@ -12,7 +12,7 @@ RSpec.describe StudentsController, type: :controller do
         Student.create(name: 'Blah Byron Blah', hometown: "Manhattan", birthday: b)
         Student.create(name: 'King Zebra', hometown: "New Prussia", birthday: b)
 
-        get :index, params: { query: "Byron" }
+        get :index, params: { search: "Byron" }
 
         expect(response.body).not_to match(/Zebra/)
       end
