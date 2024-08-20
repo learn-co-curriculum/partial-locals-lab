@@ -1,0 +1,14 @@
+<h1>All Students</h1>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= render partial: 'student', locals: {student: student} %></li>
+  <% end %>
+</ul>
+
+<%= form_tag students_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
